@@ -26,11 +26,11 @@ export class AppComponent {
 
   getData() {
     return this._http.get('https://jsonplaceholder.typicode.com/posts')
-    .map(res => res.json())
-     .subscribe(data => {
-            this.data = data;
-            console.log(this.data);
-    });
+      .map(res => res.json())
+      .subscribe(data => {
+        this.data = data;
+        console.log(this.data);
+      });
   }
 
   toggleHobbies() {
